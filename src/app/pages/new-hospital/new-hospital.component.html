@@ -1,0 +1,45 @@
+<div class="container">
+ 
+    <div class="row">
+      <div class="col-md-6  ">
+        <img class=" img-fluid " [src]="hospitalPath" alt="Hospital Image" width="" >
+      </div>
+        <div class="col-md-6 text-center ">
+            <form (submit)="onRegistration()">
+              <h4 class="text-center m-4">New Hospital Registration</h4>
+                <div class="form-group m-2">                  
+                  <input type="text" class="form-control" [(ngModel)]="hospitalObj.hospitalName" name="hospitalName" aria-describedby="texthelp" placeholder="Enter Hospital Name">
+                </div>
+                <div class="form-group m-2">                  
+                  <input type="text" class="form-control" [(ngModel)]="hospitalObj.hospitalAddress" name="hospitalAddress" id="" aria-describedby="addresshelp" placeholder="Enter Hospital Address">
+                </div>
+                <div class="form-group m-2">                  
+                  <input type="text" class="form-control" [(ngModel)]="hospitalObj.hospitalCity" name="hospitalCity"  aria-describedby="cityhelp" placeholder="Enter Hospital City">
+                </div>
+                <div class="form-group m-2">                  
+                  <input type="text" class="form-control"  [(ngModel)]="hospitalObj.hospitalContactNo" name="hospitalContactNo"  aria-describedby="contacthelp" placeholder="Enter Hospital Contact Number">
+                </div>
+                <div class="form-group m-2">                  
+                  <input type="text" class="form-control" [(ngModel)]="hospitalObj.hospitalOwnerName" name="hospitalOwnerName"  aria-describedby="ownerhelp" placeholder="Enter Hospital Owner Name">
+                </div>
+                <div class="form-group m-2">                  
+                  <input type="text" class="form-control" [(ngModel)]="hospitalObj.hospitalOwnerContactNo" name="hospitalOwnerContactNo"  aria-describedby="OwnerContatchelp" placeholder="Enter Hospital Owner Contact">
+                </div>
+                <div class="form-group m-2">
+                  <input type="email" class="form-control" [(ngModel)]="hospitalObj.hospitalEmailId"  name="hospitalEmailId"  aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div class="form-group m-2">
+                  <input type="text" class="form-control" [(ngModel)]="hospitalObj.userName"  name="userName" aria-describedby="userHelp" placeholder="Enter User Name">
+                </div>
+                <div class="form-group m-2">
+                  <input type="password" class="form-control" [(ngModel)]="hospitalObj.password"  name="password"  placeholder="Password">
+                </div>
+                <div class="d-flex ">
+                  <button type="submit" class="btn btn-success m-2">Submit</button>
+                </div>
+              </form>
+
+        </div>
+    </div>
+
+</div>
